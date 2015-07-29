@@ -159,3 +159,7 @@ func (captcha *Captcha) genImage(text string) *CImage {
 
 	return cimg
 }
+
+func (captcha *Captcha) GenImage(text string) *CImage {
+       return captcha.genImage(text)
+}
